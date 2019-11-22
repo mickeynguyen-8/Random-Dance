@@ -41,7 +41,7 @@ function keydownHandler(event) {
     console.log(event.code);
     for (let i=0; i < myArray.length; i++) {
         if (event.code == "Space") {
-            myArray[i] += Math.random(-5,5);
+            myArray[i] += Math.floor(Math.random() * 10) + (-5);
         }   
         else if (event.code == "KeyR") {
             myArray[i] = 300;
